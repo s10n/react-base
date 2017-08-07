@@ -1,6 +1,6 @@
 ## Init app
 * Set title of project
-* Lint in editor
+* Lint in editor `.eslintrc`
   ```json
   {
     "extends": "react-app"
@@ -14,11 +14,16 @@
 * Design routes
 * Style reboot.css
 
-## Packages
+
+## Development
 * Storybook or Styleguidist
   ```sh
   getstorybook
   ```
+* [Redux DevTools extension](http://extension.remotedev.io/)
+
+## Deployment
+* [Sentry](https://sentry.io)
 * Source map explorer
   ```sh
   yarn add --dev source-map-explorer
@@ -28,6 +33,7 @@
     "analyze": "source-map-explorer build/static/js/main.*"
   }
   ```
+
 
 ## Advanced
 * Unit test
