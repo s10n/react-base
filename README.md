@@ -1,5 +1,10 @@
+## Design
+* Database structure
+* Routes
+
+
 ## Init app
-* Set title of project
+* Set title of project `public/index.html`
 * Lint in editor `.eslintrc`
   ```json
   {
@@ -7,24 +12,27 @@
   }
   ```
 * Add essential packages
-  ```sh
+  - [Prettier](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#formatting-code-automatically)
+  ```bash
   yarn add --dev husky lint-staged prettier
   ```
-* Design databases structure
-* Design routes
-* Style reboot.css
+* Style [reboot.css](https://github.com/s10n/reboot.css)
 
 
 ## Development
-* Storybook or Styleguidist
-  ```sh
-  getstorybook
-  ```
-* [Redux DevTools extension](http://extension.remotedev.io/)
+* Unit test
+* Action and Reducers
+  - [Redux DevTools extension](http://extension.remotedev.io/)
+* Components
+  - [Storybook or Styleguidist](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#developing-components-in-isolation)
+    ```sh
+    getstorybook
+    ```
+
 
 ## Deployment
 * [Sentry](https://sentry.io)
-* Source map explorer
+* [Source map explorer](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#analyzing-the-bundle-size)
   ```sh
   yarn add --dev source-map-explorer
   ```
@@ -33,8 +41,8 @@
     "analyze": "source-map-explorer build/static/js/main.*"
   }
   ```
+* [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist)
 
 
 ## Advanced
-* Unit test
-* Code Splitting
+* [Code Splitting](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#code-splitting)
