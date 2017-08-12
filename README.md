@@ -1,6 +1,8 @@
 ## Design
 * Database structure
 * Routes
+  - Domain
+  - 404
 
 
 ## Init app
@@ -19,11 +21,14 @@
 * Style [reboot.css](https://github.com/s10n/reboot.css)
 
 ### Optional
-```bash
-yarn add react-router
-yarn add react-helmet
-yarn add --dev react-snapshot@next
-```
+* Favicon
+  - [Favicon Generator](http://realfavicongenerator.net/)
+* Packages
+  ```bash
+  yarn add react-router
+  yarn add react-helmet
+  yarn add --dev react-snapshot@next
+  ```
 
 
 ## Development
@@ -38,8 +43,9 @@ yarn add --dev react-snapshot@next
 
 
 ## Deployment
+* [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist)
 * [Sentry](https://sentry.io)
-* [Google Analytics](https://www.google.com/analytics/)
+* [PageSpeed](https://developers.google.com/speed/pagespeed/)
 * [Source map explorer](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#analyzing-the-bundle-size)
   ```sh
   yarn add --dev source-map-explorer
@@ -49,7 +55,13 @@ yarn add --dev react-snapshot@next
     "analyze": "source-map-explorer build/static/js/main.*"
   }
   ```
-* [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist)
+* [Google Analytics](https://www.google.com/analytics/)
+* [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+
+
+## Collaboration
+* README.md
+  - How to build
 
 
 ## Advanced
