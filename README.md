@@ -7,6 +7,8 @@
 
 ## Init app
 * Set title of project `public/index.html`
+* Set Favicon
+  - [Favicon Generator](http://realfavicongenerator.net/)
 * Lint in editor `.eslintrc`
   ```json
   {
@@ -21,20 +23,22 @@
 * Style [reboot.css](https://github.com/s10n/reboot.css)
 
 ### Optional
-* Favicon
-  - [Favicon Generator](http://realfavicongenerator.net/)
 * Packages
   ```bash
   yarn add react-router
   yarn add react-helmet
   yarn add --dev react-snapshot@next
   ```
+  - [All About React Router 4](https://css-tricks.com/react-router-4/)
 
 
 ## Development
 * Unit test
+  - [Running Test](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
 * Action and Reducers
   - [Redux DevTools extension](http://extension.remotedev.io/)
+  - [Improve your development workflow with Redux DevTools Extension](https://medium.com/@zalmoxis/improve-your-development-workflow-with-redux-devtools-extension-f0379227ff83)
+  - [Using Redux DevTools in production](https://medium.com/@zalmoxis/using-redux-devtools-in-production-4c5b56c5600f)
 * Components
   - [Storybook or Styleguidist](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#developing-components-in-isolation)
     ```sh
