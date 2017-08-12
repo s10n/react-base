@@ -46,3 +46,17 @@
 
 ## Advanced
 * [Code Splitting](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#code-splitting)
+
+
+## Sentry configurations
+* [Sentry Documentation](https://docs.sentry.io/)
+  - [Release](https://docs.sentry.io/learn/releases/)
+  - [Context](https://docs.sentry.io/learn/context/)
+* [Javascript](https://docs.sentry.io/clients/javascript/)
+  - [Whitelist urls](https://docs.sentry.io/clients/javascript/config/)
+  - [Passing additional data](https://docs.sentry.io/clients/javascript/usage/#passing-additional-data)
+  - [Source maps](https://docs.sentry.io/clients/javascript/sourcemaps/#making-source-maps-available-to-sentry)
+* [Integrations](https://docs.sentry.io/integrations/)
+  - [Github](https://docs.sentry.io/integrations/github/)
+  - Slack
+  - [Jira](https://docs.sentry.io/integrations/jira/)
