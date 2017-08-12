@@ -18,6 +18,13 @@
   ```
 * Style [reboot.css](https://github.com/s10n/reboot.css)
 
+### Optional
+```bash
+yarn add react-router
+yarn add react-helmet
+yarn add --dev react-snapshot@next
+```
+
 
 ## Development
 * Unit test
@@ -32,6 +39,7 @@
 
 ## Deployment
 * [Sentry](https://sentry.io)
+* [Google Analytics](https://www.google.com/analytics/)
 * [Source map explorer](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#analyzing-the-bundle-size)
   ```sh
   yarn add --dev source-map-explorer
