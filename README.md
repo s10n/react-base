@@ -11,9 +11,7 @@
   - [Favicon Generator](http://realfavicongenerator.net/)
 * Lint in editor `.eslintrc`
   ```json
-  {
-    "extends": "react-app"
-  }
+  { "extends": "react-app" }
   ```
 * Add essential packages
   - [Prettier](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#formatting-code-automatically)
