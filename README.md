@@ -7,7 +7,7 @@
 
 ## Init app
 * Set title of project `public/index.html`
-* Set Favicon
+* Set favicon
   - [Favicon Generator](http://realfavicongenerator.net/)
 * Lint in editor `.eslintrc`
   ```json
@@ -29,12 +29,15 @@
   +   ]
   + }
   ```
-* Style [reboot.css](https://github.com/s10n/reboot.css)
+* [Reboot css](https://github.com/s10n/reboot.css)
 
 ### Optional
 * Packages
   ```bash
-  yarn add react-router
+  yarn add redux react-redux keymirror
+  yarn add react-router-dom
+  yarn add axios redux-thunk
+  yarn add firebase
   yarn add react-helmet
   yarn add --dev react-snapshot@next
   ```
