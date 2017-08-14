@@ -18,6 +18,17 @@
   ```bash
   yarn add --dev husky lint-staged prettier
   ```
+  ```diff
+  + "precommit": "lint-staged"
+  ```
+  ```diff
+  + "lint-staged": {
+  +   "src/**/*.{js,jsx,json,css}": [
+  +     "prettier --single-quote --no-semi --print-width 100 --write",
+  +     "git add"
+  +   ]
+  + }
+  ```
 * Style [reboot.css](https://github.com/s10n/reboot.css)
 
 ### Optional
