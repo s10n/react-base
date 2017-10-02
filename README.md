@@ -59,6 +59,7 @@
 
 
 ## Deployment
+* [Progressive Web App](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app)
 * [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist)
 * [Sentry](https://sentry.io)
 * [PageSpeed](https://developers.google.com/speed/pagespeed/)
