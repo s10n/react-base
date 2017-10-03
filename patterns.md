@@ -7,6 +7,7 @@
     counter: prevState.counter + props.increment
   }))
   ```
+
 * [Forms](https://facebook.github.io/react/docs/forms.html)
   - [Handling Multiple Inputs](https://facebook.github.io/react/docs/forms.html#handling-multiple-inputs)
   ```js
@@ -18,10 +19,13 @@
     this.setState({ [name]: value })
   }
   ```
+
 * [Lifting State Up](https://facebook.github.io/react/docs/lifting-state-up.html)
   - 종종 여러 구성 요소가 동일한 변경 데이터를 반영해야한다. 가장 가까운 공통 조상까지 공유 상태를 들어올리는 것이 좋다.
   - [Temperature Calculator](http://codepen.io/valscion/pen/jBNjja?editors=0010)
+
 * [Composition vs Inheritance](https://facebook.github.io/react/docs/composition-vs-inheritance.html)
+
 * [JSX In Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
   - [Render a different component based on a prop](https://facebook.github.io/react/docs/jsx-in-depth.html#choosing-the-type-at-runtime)
   ```jsx
@@ -39,24 +43,12 @@
   }
   ```
 
-
-## React
-
-* [10 React mini-patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5)
-
-### HOC
-* [PublicRoute, PrivateRoute](https://github.com/tylermcginnis/react-router-firebase-auth/blob/master/src/components/index.js) by partner of ReactTraining
-
 ### Middleware
 * 역할: action과 reducer 사이에서의 처리
 * 예시
   - rexux-logger
   - redux-thunk: 비동기 fetch action의 response 처리
   - 에러 핸들링: 어떤 API로부터 받은 프로퍼티의 이름과 내 앱이 사용 중인 것과 매치하지 않을 때
-
-
-## Redux
-* [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
 
 ## CMS
@@ -107,20 +99,6 @@ handleToggle() {
 }
 ```
 
-* Submit
-```js
-onFormSubmit(event) {
-  event.preventDefault()
-  // Do something...
-}
-```
-
-### Packages
-* [uuid](https://github.com/kelektiv/node-uuid)
-* [Reselect](https://github.com/reactjs/reselect)
-* [Normalizr](https://github.com/paularmstrong/normalizr)
-* [Redux Bug Reporter](http://dtschust.github.io/redux-bug-reporter/)
-
 
 ## Utils
 
@@ -135,7 +113,6 @@ render() {
   return <SearchBar onSearchTermChange={videoSearch} />
 }
 ```
-* [Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
 
 
 ## API
@@ -144,6 +121,7 @@ render() {
 ```html
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 ```
+
 ```jsx
 class GoogleMap extends Component {
   componentDidMount() {
@@ -157,6 +135,3 @@ class GoogleMap extends Component {
   }
 }
 ```
-
-### Fake REST API
-* [JSONPlaceholder](https://jsonplaceholder.typicode.com)
