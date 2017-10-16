@@ -1,6 +1,5 @@
 # React base
 
-## 2017
 * TDD/BDD
 * Performance
 * Functional programming

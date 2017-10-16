@@ -3,7 +3,6 @@
 * PropTypes
   - defaultProps
 * Unit test
-  - [Running Test](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
 * Travis
 * Action and Reducers
   - [Redux DevTools extension](http://extension.remotedev.io/)
