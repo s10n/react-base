@@ -23,5 +23,28 @@
   +   ]
   + }
   ```
-* [Reboot css](https://github.com/s10n/reboot.css)
 * [Add optional packages](http://nomad.works/study/front-end/links-library)
+
+## Stylesheets
+* SCSS
+  ```sh
+  yarn add --dev node-sass-chokidar npm-run-all
+  ```
+
+  - `packages.json`
+  ```diff
+  "scripts": {
+  +   "start": "npm-run-all -p start-css start-js",
+  +   "start-js": "react-scripts start",
+  +   "start-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+  +   "build": "npm-run-all build-css build-js",
+  +   "build-js": "react-scripts build",
+  +   "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+  ```
+
+  - `.gititnore`
+  ```diff
+  + src/**/*.css
+  ```
+
+* [Reboot css](https://github.com/s10n/reboot.css)

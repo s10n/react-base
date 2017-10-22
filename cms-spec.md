@@ -71,10 +71,3 @@
 * pristine, validation(client/server)
 * AutoFocus, AutoComplete
 * Submit 후 필요시 history.push()
-
-
-## 조언
-* Category에 Articles 목록을 props로써 전달할 때: `deleted: true`를 미리 필터링할 것인가? 만약 해당 Category를 삭제할 때 속한 Articles의 카테고리 필드를 제거하는 작업이 있다면, `deleted: true`인 Articles은 이 작업의 대상에서 제외될 것이다.
-* 낙관적 업데이트를 할 때: 어떤 Article의 필드가 예를들어 { name, slug }뿐이었다고 가정한다. 만약 원래 없었던 `deleted: true`라는 필드를 추가한다면, 낙관적 업데이트가 실패했을 때 `deleted: false`로 되돌릴 방법을 마련해야한다.
-* 다중의 모달이 필요할 때: redux의 store에 방대한 virtual dom 전체를 저장하지 않는다. 트리거가 될만한 데이터만 전달한다.
-* 퍼포먼스: 반복적으로 출력할 컴포넌트가 있다면, `PureComponent` 혹은 `componentShouldUpdate`로 re-rendering을 제한해야 한다.

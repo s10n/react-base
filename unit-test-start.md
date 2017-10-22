@@ -58,3 +58,21 @@ describe('App', () => {
   - `redux-mock-store`: mock the store
   - `nock`: mock the HTTP request
 
+### 함수
+```js
+it('인자가 하나라도 빠졌거나 타입이 잘못되면 예외를 던진다', () => {
+  const badArgs = [
+    [],
+    ['Name'],
+    ['Name', ['Dependency1', 'Dependency2']],
+    ['Name', () => {}],
+    [1, ['a', 'b'], () => {}],
+    ['Name', [1, 2], () => {}],
+    ['Name', ['a', 'b'], 'should be a function']
+  ]
+
+  badArgs.forEach(args => {
+    expect(() => container.register.apply(container, args)).toThrow()
+  })
+})
+```

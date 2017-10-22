@@ -27,6 +27,7 @@
   - fake props를 mock한다.
 * [Testing in React: Getting Off The Ground](https://medium.com/javascript-inside/testing-in-react-getting-off-the-ground-5f569f3088a)
   - input에 change를 시뮬레이트하고 함수가 호출되는지 여부 파악하는 테스트
+* [Snapshot testing React Components with Jest](https://hackernoon.com/snapshot-testing-react-components-with-jest-744a1e980366?source=rss----3a8144eabfe3---4)
 
 ### Redux
 * [Unit Testing Redux Container Components - Part 1](http://www.wsbrunson.com/react/redux/test/2016/05/08/testing-redux-containers.html)
@@ -38,3 +39,4 @@
   - Async (Redux-thunk)
 * [Testing React & Redux Applications](https://medium.com/caffeine-and-testing/testing-react-redux-applications-fee79ac0087f)
   - `import configureMockStore from 'redux-mock-store'`
+* [Unit Testing Redux Connected Components](https://hackernoon.com/unit-testing-redux-connected-components-692fa3c4441c?source=rss----3a8144eabfe3---4) - Mocking functions and Redux store
