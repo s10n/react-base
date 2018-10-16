@@ -2,7 +2,6 @@
 
 * Init files
   - Delete unnecessary files and lines
-  
   - Set title of project `public/index.html`
 
 * Add essential packages
