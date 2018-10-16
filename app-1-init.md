@@ -1,31 +1,49 @@
 # Init app
 
-* Set title of project `public/index.html`
+* Init files
+  - Delete unnecessary files and lines
+  
+  - Set title of project `public/index.html`
+
+* Add essential packages
+  ```sh
+  yarn add node-sass
+  yarn add --dev husky lint-staged prettier
+  prettier --single-quote --no-semi --write src/**/*.{js,jsx,json,scss}
+  ```
+  ```json
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,scss}": [
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
+  }
+  ```
+
+* Finish
+  ```sh
+  yarn start
+  git commit -m "Init app"
+  ```  
+
+## Next
 * Set favicon
   - [Favicon Generator](http://realfavicongenerator.net/)
+* [Add optional packages](http://nomad.works/study/front-end/links-library)
+* [Reboot css](https://github.com/s10n/reboot.css)
+
+---
+## Version 1.x
 * Lint in editor `.eslintrc`
   ```json
   { "extends": "react-app" }
   ```
-* Add essential packages
-  - [Prettier](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#formatting-code-automatically)
-  ```bash
-  yarn add --dev husky lint-staged prettier
-  ```
-  ```diff
-  + "precommit": "lint-staged"
-  ```
-  ```diff
-  + "lint-staged": {
-  +   "src/**/*.{js,jsx,json,css}": [
-  +     "prettier --single-quote --no-semi --write",
-  +     "git add"
-  +   ]
-  + }
-  ```
-* [Add optional packages](http://nomad.works/study/front-end/links-library)
 
-## Stylesheets
 * SCSS
   ```sh
   yarn add --dev node-sass-chokidar npm-run-all
@@ -46,5 +64,3 @@
   ```diff
   + src/**/*.css
   ```
-
-* [Reboot css](https://github.com/s10n/reboot.css)
