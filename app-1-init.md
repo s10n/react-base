@@ -8,7 +8,6 @@
   ```sh
   yarn add node-sass
   yarn add --dev husky lint-staged prettier
-  prettier --single-quote --no-semi --write src/**/*.{js,jsx,json,scss}
   ```
   ```json
   "husky": {
@@ -22,6 +21,9 @@
       "git add"
     ]
   }
+  ```
+  ```sh
+  prettier --single-quote --no-semi --write "src/**/*.{js,jsx,json,scss}"
   ```
 
 * Finish
