@@ -5,10 +5,6 @@
   - Set title of project `public/index.html`
 
 * Add essential packages
-  ```sh
-  yarn add node-sass
-  yarn add --dev husky lint-staged prettier
-  ```
   ```json
   "husky": {
     "hooks": {
@@ -23,13 +19,15 @@
   }
   ```
   ```sh
+  yarn add node-sass;
+  yarn add --dev husky lint-staged prettier;
   prettier --single-quote --no-semi --write "src/**/*.{js,jsx,json,scss}"
   ```
 
 * Finish
   ```sh
-  yarn start
   git commit -m "Init app"
+  yarn start
   ```  
 
 ## Next
