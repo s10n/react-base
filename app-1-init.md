@@ -26,7 +26,7 @@
 
 * Finish
   ```sh
-  git commit -m "Init app"
+  git commit -m "Init app";
   yarn start
   ```  
 
