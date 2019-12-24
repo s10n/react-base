@@ -28,11 +28,25 @@
   ```sh
   git commit -m "Init app";
   yarn start
-  ```  
+  ```
 
-## Next
+## PWA
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+```
+```json
+{
+  "display": "standalone"
+}
+```
+
 * Set favicon
   - [Favicon Generator](http://realfavicongenerator.net/)
+
+## Next
 * [Add optional packages](http://nomad.works/study/front-end/links-library)
 * [Reboot css](https://github.com/s10n/reboot.css)
 
