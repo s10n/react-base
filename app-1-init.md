@@ -26,6 +26,7 @@
 
 * Finish
   ```sh
+  echo "BROWSER=none" >> .env.development
   git commit -m "Init app";
   yarn start
   ```
