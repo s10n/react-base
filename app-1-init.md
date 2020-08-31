@@ -27,6 +27,7 @@
   ```sh
   echo "SASS_PATH=node_modules:src" >> .env
   echo "BROWSER=none" >> .env.development
+  echo "@import-normalize;" >> src/index.scss
   git commit -m "Init app";
   yarn start
   ```
