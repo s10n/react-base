@@ -25,9 +25,15 @@
 
 * Finish
   ```sh
-  echo "SASS_PATH=node_modules:src" >> .env;
-  echo "BROWSER=none" >> .env.development;
-  echo "@import-normalize;" >> src/index.scss;
+  echo "SASS_PATH=node_modules:src" >> .env
+    ```
+  ```sh
+  echo "BROWSER=none" >> .env.development
+  ```
+  ```sh
+  echo "@import-normalize;" >> src/index.scss
+  ```
+  ```sh
   git commit -m "Init app";
   yarn start
   ```
