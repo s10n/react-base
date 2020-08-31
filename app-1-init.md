@@ -12,20 +12,20 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,scss}": [
-      "prettier --single-quote --no-semi --write",
-      "git add"
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --no-semi --write"
     ]
   }
   ```
   ```sh
   yarn add node-sass;
-  yarn add --dev husky lint-staged prettier;
-  prettier --single-quote --no-semi --write "src/**/*.{js,jsx,json,scss}"
+  yarn add husky lint-staged prettier;
+  prettier --no-semi --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
   ```
 
 * Finish
   ```sh
+  echo "SASS_PATH=node_modules:src" >> .env
   echo "BROWSER=none" >> .env.development
   git commit -m "Init app";
   yarn start
