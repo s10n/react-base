@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --single-quote --no-semi --write"
+      "prettier --no-semi --write"
     ]
   }
   ```
